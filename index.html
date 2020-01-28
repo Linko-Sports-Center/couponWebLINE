@@ -7,7 +7,7 @@
   <!--  設定參數-->
   <script>
     var useLocalAPIs = false;
-    var version = "1.0";
+    var version = "1.1";
   </script>
   
   <meta charset="UTF-8">
@@ -332,15 +332,15 @@
       }
 
       paramToSend = "?API=01" +
-        "&UserId=" + userId[1] +
         "&Name=" + $("#name").text() +
         "&Gender=" + $("#gender").val() +     
         "&Birth=" + $("#birthday").val() +
         "&Phone=" + $("#phone").val() +
         "&ID=" + $("#identity").val() +
         "&Address=" + $("#address").val() +
-        "&Height=" + $("#bodyHeight").val() +
-        "&PicURL=" + pictureUrl[1];
+        "&UserId=" + userId[1] +        
+        "&PicURL=" + pictureUrl[1] +       
+        "&Height=" + $("#bodyHeight").val();
 
       var profile = "請確認會員資料:\n" +
         "    會員姓名: " + $("#name").text() + "\n" +
